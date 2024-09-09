@@ -112,4 +112,9 @@ console.log(numbers); // output->[ 1, 8, 8, 4 ]
     It fills all the elements in an array from a start index to an end index with a static value.
     Ex:- numbers.fill(8,1,3); // from 1 to 3 (not including 3) all elements will be replaced with 3
     console.log(numbers); // output->[ 1, 8, 8, 4 ]
+
+// Difference b/w [] and .(like Person1.name)?
+// what are the rules to define key in object.
+// what are the specific reasons to use object or array.
+
 */
