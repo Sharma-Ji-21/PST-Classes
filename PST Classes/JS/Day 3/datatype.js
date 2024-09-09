@@ -91,6 +91,7 @@ console.log(typeof("25n"-5));  //number   ({num [sign] string = Num} [sign= -,*,
 // ------Extra------(for the particular time being)
 console.log(typeof([]));  // object
 console.log({}+[]);  // [object Object]
+// when u use + with {} javascript will try to convert in into a string
 console.log(typeof([1,2,3,4]));  // object
 console.log(typeof({name: "Jay"}));  // object
 
