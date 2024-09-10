@@ -23,7 +23,7 @@ console.log(age); // output 99
 // cannot be named by reserved keywords (var,let,const)
 
 
-//variable are the memory block which can be use to store data
+//**Variable**: variable are the memory block which can be use to store data
 //declaired using const called constant
 //Constant are the variable whose value cannot change
 //variable cannot be redeclared or reassigned
