@@ -120,10 +120,8 @@ console.log(numbers); // output->[ 1, 8, 8, 4 ]
     Ex:- numbers.fill(8,1,3); // from 1 to 3 (not including 3) all elements will be replaced with 3
     console.log(numbers); // output->[ 1, 8, 8, 4 ]
 
-    DIFF B/W [] AND . when calling property:
-    -every key in object is a string
-    - if we have a key value with empty spaces inside and we want to cal that property then we use [] otherwise . is enough
-    };
-    //what are the rule to define key in object
-    //what are the specific reasons to use object or array
+// Difference b/w [] and .(like Person1.name)?
+// what are the rules to define key in object.
+// what are the specific reasons to use object or array.
+
 */
