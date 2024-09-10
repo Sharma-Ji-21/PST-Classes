@@ -25,6 +25,13 @@ const person={
     gender: "Female",
     color: "Black",
 };
+//every key in object as a string
+const person78={
+    "name": "soumya", // this is one of the properties of the person
+    "age": 19, 
+    "gender": "male",
+    "color": "white",
+};
 const person2={}; // This is the other method of defining
     person2.name= "Yug"; 
     person2.age= 17;
@@ -39,7 +46,7 @@ const car1={
 };
 car1.isElectric= true;
 
-console.log(person.name, person2.name, car1);
+console.log(person.name, person2.name, car1, person78);
 
 //Accessing Object method:
 console.log(person.name+" is having "+car1.name+" "+car1.model+ " which is "+car1.color+" in color"+" And Yes "+person2.name+" is "+ person2.color+" in color");
@@ -113,8 +120,10 @@ console.log(numbers); // output->[ 1, 8, 8, 4 ]
     Ex:- numbers.fill(8,1,3); // from 1 to 3 (not including 3) all elements will be replaced with 3
     console.log(numbers); // output->[ 1, 8, 8, 4 ]
 
-// Difference b/w [] and .(like Person1.name)?
-// what are the rules to define key in object.
-// what are the specific reasons to use object or array.
-
+    DIFF B/W [] AND . when calling property:
+    -every key in object is a string
+    - if we have a key value with empty spaces inside and we want to cal that property then we use [] otherwise . is enough
+    };
+    //what are the rule to define key in object
+    //what are the specific reasons to use object or array
 */

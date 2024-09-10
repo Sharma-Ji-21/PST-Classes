@@ -36,3 +36,7 @@ let myFavColour="Green";
 console.log("My favorite color initially is: " + myFavColour); // output=> My favorite color initially is: Green
 myFavColour="Blue";
 console.log("After changing my favorite color, it becomes: " + myFavColour); // output=> After changing my favorite color to blue, it becomes: Blue
+
+/* Feedback:
+Favorite Color: Implementation: The steps you followed to declare and then update myFavColour are correct. The log messages effectively communicate the changes in the variable's value. Suggestion: As a best practice, avoid abbreviations in variable names unless they are well-known (e.g., "Fav" to "Favorite"). This helps avoid confusion and makes the code more understandable, especially in larger projects. Consider adding comments or breaking down the logic for each step, especially when introducing the third variable. This will enhance clarity for anyone reviewing your code. Consider using camelCase consistently even in your log output (e.g., "studentPresent" instead of "student present"). Consistency in naming conventions is crucial in maintaining clean and readable code
+*/
