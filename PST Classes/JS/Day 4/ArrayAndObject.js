@@ -116,4 +116,5 @@ console.log(numbers); // output->[ 1, 8, 8, 4 ]
 // Difference b/w [] and .(like Person1.name)?
 // what are the rules to define key in object.
 // what are the specific reasons to use object or array.
+// mai hu Yug.
 */
