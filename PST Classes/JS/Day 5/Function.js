@@ -4,7 +4,7 @@ Functions:
 -Functions are reusable block of code that perform a specific task.
 -We can define the fuction once and can call it multiple times.
 -Fuction can be called by functionName();
-
+-Inside a function if we call "let x = 44" then then the value x will be assigned through out the function and if we call "var x = 44" then the value of x will be assigned through out the code
 
 Need of functions:-
 -Code Reuasblity
@@ -17,8 +17,9 @@ function functionName(parameters) {
 }
     Ex:-
 */
-function greet(){  // 
+function greet(){  
     console.log("Hello Ramoliya");
+    console.log("Hello Tarman");
     console.log("Before calling greet");
 }
 greet(); // without this the code doesn't work because we need to call greet().
@@ -33,6 +34,7 @@ function printName(name) {
 }
 printName("OM SHARMA");
 printName("YUG RAMOLIYA");
+printName("Tarman")
 
 // Multiple Values to a function
 function addNum(Num1,Num2){
