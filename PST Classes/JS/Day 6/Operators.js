@@ -104,16 +104,17 @@ console.log((k<4)&&(j>2)); // &&-> False [And]
 console.log((k<4)||(j>2)); // ||-> True [Or]
 console.log(!(k==4)); // !-> False [Not]
 
-/* Ternary Operator:
+//Ternary Operator:
+let urAge =17;
+let reqAge =18;
+let condition =(urAge>=reqAge)?"Yes U are eligible to vote":"No U are eligible to vote";
+console.log(condition); // output-> No U are eligible to vote
+/*
 -it evaluate the code based on conditions 
 -grneral syntax:
 condition? Expression 1(true value) :Expression 2 (false value);
 */
 
-let urAge =17;
-let reqAge =18;
-let condition =(urAge>=reqAge)?"Yes U are eligible to vote":"No U are eligible to vote";
-console.log(condition); // output-> No U are eligible to vote
 
 let totalMarks =100;
 let passMarks =50;
