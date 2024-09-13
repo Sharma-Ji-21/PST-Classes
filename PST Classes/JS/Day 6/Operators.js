@@ -85,7 +85,7 @@ console.log(3 === "3") // output-> false //this will also check data type for co
 */
 let p=12;
 let q=25;
-console.log(p&q); // output-> 5
+console.log(p&q); // output-> 8
 
 /*
 2. OR (|):
@@ -94,6 +94,15 @@ console.log(p&q); // output-> 5
 0 1 = 1;
 1 1 = 1;
 */
+
+/* 
+2. XOR (^): //Similar bits value result zero for XOR.
+0 0 = 0;
+1 0 = 1;
+0 1 = 1;
+1 1 = 0;
+*/
+
 let g=12;
 let h=25;
 console.log(g|h); // output-> 29

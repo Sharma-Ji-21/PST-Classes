@@ -95,6 +95,11 @@ console.log(numbers); // output->[ 1, 2, 3, 4, 5 ]
 let a= numbers.pop();  // anything we write in b/w the () nothong matters for Pop
 console.log("the element which is poped is "+ a);   //**DOUBT** **DOUBT** **DOUBT** **DOUBT**
 console.log(numbers); // output->[ 1, 2, 3, 4 ]
+let f=numbers.shift();
+console.log("the element which is shifted is "+ f);   //**DOUBT** **DOUBT** **DOUBT** **DOUBT**
+numbers.unshift(0);
+console.log(numbers); // output-> [ 0, 1, 2, 3, 4 ]
+
 // Fill Use:-
 numbers.fill(8,1,3); // from 1 to 3 (not including 3) all elements will be replaced with 3
 console.log(numbers); // output->[ 1, 8, 8, 4 ]
@@ -119,6 +124,13 @@ console.log(numbers); // output->[ 1, 8, 8, 4 ]
     It fills all the elements in an array from a start index to an end index with a static value.
     Ex:- numbers.fill(8,1,3); // from 1 to 3 (not including 3) all elements will be replaced with 3
     console.log(numbers); // output->[ 1, 8, 8, 4 ]
+
+    5. Unshift:
+    It adds one or more elements to the beginning of an array and returns the new length of the array.
+
+
+    6. Shift:
+    It removes the first element from an array and returns that element.
 */
 let arr=[1,2,3,4,5,6];
 arr.fill(0,1,4); // digits of array Index [1],[2],[3] are replaced by 0. Index [0],[4],[5] remains the same. fill doesn't consider the last index for (0,1,4)

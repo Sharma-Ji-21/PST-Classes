@@ -1,6 +1,7 @@
 /*
 Control statement:
 used to control the execution of a program based on the particular program
+//we take control of javascript code execution by putting some condition that's why is called control flow statement
 
 1. If-else statement:
 if (condition) {
@@ -94,6 +95,22 @@ if (num%2==0){
     } else{
         console.log(`${num} is less than or equal to 10`);
     }
+}
+
+function check(a){
+    if (a%2==0){
+        return "even";
+    }
+    else {
+        return "odd"
+    }
+}
+let result = check(5);
+if (result=="even"){
+    console.log("Hello");
+}
+else {
+    console.log("Bye");
 }
 
 /* Switch:
