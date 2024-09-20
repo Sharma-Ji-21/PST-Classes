@@ -1,7 +1,8 @@
 /*
 factory function and constructor functions:
--factory function are the function which return objects. They're called like
-regular functions and don't use the new keyword
+-factory function are the function which return and create objects. They're called like
+regular functions and no need to use the 'new' keyword.
+-A factory function helps you avoid code repetition by creating multiple objects with the same structure.
 -they provide a simple way to create objects
 factory function are the function like normal one only, just returns object
 hm ek function banate h jo object return karta h thats why we don't need to return

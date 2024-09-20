@@ -1,5 +1,5 @@
 let obj1={
-    firstName:"Raj",
+    firstName:"Raj", 
     secondName:"xyz",
     fulName(){
         console.log(firstName + secondName)
@@ -8,10 +8,10 @@ let obj1={
 // obj1.fulName();
 
 let obj2={
-    firstName:"Raj",
+    firstName:"Raj",// defining properties directly
     secondName:"xyz",
     fullName(){
-        console.log(this.firstName +" "+ this.secondName)
+        console.log(this.firstName +" "+ this.secondName)// Accessing the properties using `this`
     }
 }
 obj2.fullName();
