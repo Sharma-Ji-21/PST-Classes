@@ -32,8 +32,8 @@ addBook(new Book("To Kill a Mockingbird", "Harper Lee", 1960));
 console.log("Listing original books: ");
 listBooks()
 
-let ogbook=library[1]
-let cloneBook=Object.assign({}, ogbook);
+let originalBook=library[1]
+let cloneBook=Object.assign({}, originalBook);
 cloneBook.title="The Lord of the Rings";
 cloneBook.year=1937;
 console.log("clone Book is here: ");
@@ -50,7 +50,7 @@ console.log(`${cloneBook.title}, by ${cloneBook.author}, published in ${cloneBoo
 // 4. Use a 'for...in' loop to iterate over the properties of an item object and display them.
 // 5. Implement a 'calculateTotal' function that uses a 'for...of' loop to calculate the total cost of
 // items in the cart.
-// Sample template:
+
 
 function createItem(name, price, quantity) {
     return { name:name, price:price, quantity:quantity};
