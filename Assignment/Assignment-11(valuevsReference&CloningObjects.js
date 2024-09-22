@@ -41,3 +41,8 @@ console.log(studentCopy);
 // 4.Return the count of Pizzas you should order as an integer.
 // 5.Example: if the input is 12 (12 guests), the function should return 5 (5 Pizzas)
 
+function orderPizzas(numGuests) {
+    let pizzaRequirement= Math.ceil(numGuests * 3 / 8)
+    return "Number of Pizza Required-> "+pizzaRequirement+" for "+ numGuests+" Guest";
+}
+console.log(orderPizzas(12))
