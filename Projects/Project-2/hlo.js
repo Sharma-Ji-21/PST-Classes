@@ -4,7 +4,7 @@ function updateDisplay() {
     document.querySelector("input").value = problem.join("");
 }
 
-function value(num) {
+function pushvalue(num) {
     problem.push(num);
     updateDisplay();
 }
@@ -34,14 +34,19 @@ function erase(){
     updateDisplay();
 }
 
-function calculate() {
-    let expression = problem.join("");
-    let result = eval(expression);
-    document.querySelector("input").value = result;
-    problem = [result];
+function decimal(){
+    problem.push(".");
+    updateDisplay();
 }
 
 function clearInput() {
     problem = [];
     updateDisplay();
+}
+
+function calculate() {
+    let expression = problem.join("");
+    let result = eval(expression); // 
+    document.querySelector("input").value = result;
+    problem = [result];
 }

@@ -103,21 +103,60 @@
 //   return sum;
 // }
 
-function solution(str){
-  let arr=[];
-  for (let i=0;i<str.length;i+=2){
-    if(str.length%2===0){
-      arr.push(str[i]+str[i+1])
-    }
-  }
-  for (let j=0;j<str.length-1;j+=2){
-    if (str.length%2!==0){
-        arr.push(str[j]+str[j+1])
-      }
-    };
-    if (str.length%2!==0){
-      arr.push(str[str.length-1]+'_')
-    }
-    return arr;
-}
-console.log(solution("abftuu"))
+// function solution(str){
+//   let arr=[];
+//   for (let i=0;i<str.length;i+=2){
+//     if(str.length%2===0){
+//       arr.push(str[i]+str[i+1])
+//     }
+//   }
+//   for (let j=0;j<str.length-1;j+=2){
+//     if (str.length%2!==0){
+//         arr.push(str[j]+str[j+1])
+//       }
+//     };
+//     if (str.length%2!==0){
+//       arr.push(str[str.length-1]+'_')
+//     }
+//     return arr;
+// }
+// console.log(solution("abftuu"))
+// function isPrime(number) {
+//   if (number<2){
+//     return false;
+//   }
+//   if (number==2){
+//     return true;
+//   }
+//   for (let i=2;i<=Math.round(number/2);i++){
+//     if (number%i==0){
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+
+// function getPrimes(start, finish) {
+//   let primes = [];
+//   for (let j = start; j <= finish; j++) {
+//     if (isPrime(j)==true) {
+//       primes.push(j);
+//     }
+//   }
+//   return primes;
+// }
+// function getPrimes(start, finish) {
+//   let prime = [];
+  
+//   const max = Math.max(start, finish);
+//   const min = Math.min(start, finish);
+// console.log(max)
+// console.log(min)
+// }
+// getPrimes(2,4)
+
+let string="Replace all areugns"
+// console.log(string.replaceAll("a","e"))
+// g (global flag):
+// i (case-insensitive flag):
+console.log(string.replace(/a/gi, "e"))
