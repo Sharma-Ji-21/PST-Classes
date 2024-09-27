@@ -27,7 +27,7 @@ let x="hello"
 console.log(x.charAt(0)) // it is not taking negative value
 console.log(x.at(-2)) // it is taking negative value
 
-let msg="Din me Yug, Raat me Yugji"
+let msg="Din me Yug, Raat me Andhi"
 let newmsg=msg.replace(/yug/gi,"Gandhi")
 // let newmsg1=msg.replaceAll(/yug/gi,"Ramoliya")
 // console.log(newmsg1)
