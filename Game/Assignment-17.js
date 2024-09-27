@@ -6,7 +6,7 @@ if (newName==''){
     return false;
 }
 if (newName.includes("yug") || newName.includes("gautam")){
-    console.log("THIS GAME IS NOT FOR RUN-D");
+    console.log("THIS GAME IS NOT FOR RUN-");
     return false;
 }
 else {
@@ -171,7 +171,7 @@ hints: [
 {
 title: "Lagaan",
 hints: [
-"It starts with 'L'. it was a very long movie of amit khan",
+"It starts with 'L'. it was a very long movie of Aamir khan",
 "A cricket match between villagers and British officers.",
 "It?s not just a game, it?s a matter of survival.",
 "Aamir Khan stars in this epic.",
@@ -319,10 +319,16 @@ hints: [
 ]
 }
 ];
-let randomiser=Math.ceil((Math.random()*(15-1))+1)
-let randomMovie=movies[randomiser];
-let length=randomMovie.hints.length;
-console.log(randomMovie.hints[0]);
+function randomisers(){
+    let randomiser=Math.ceil((Math.random()*(15-1))+1)
+    let randomMovie=movies[randomiser];
+    var length=randomMovie.hints.length;
+    return {randomMovie,length,randomiser};
+}
+randomisers();
+function process() {
+    let {randomMovie, length}=randomisers();
+    console.log(randomMovie.hints[0]);
 let input=prompt("Guess the Movie-> ");
 for (let i=1; i<length; i++) {
     if (input!==randomMovie.title){
@@ -330,12 +336,22 @@ for (let i=1; i<length; i++) {
         input=prompt("Guess the Movie-> ");
     }
     else{
-        if (i<length){
+        if (i<9){
             console.log(`Congratulation U get it and Secured ${10-i+1} points`)
             break;
         }
-        else if(i==length){
-            console.log(`Try again next time`)
-        }
     }
+    if(i==9){
+        console.log(`Try again next time, The correct Answer was ${randomMovie.title}`);
+    }
+}
+}
+process ();
+input=prompt("Would U Like To Play Again (Yes[Y]/No[N])?");
+if (input.toLowerCase()=='yes' || input.toLowerCase()=='y'){
+    randomisers(),process();
+} else if (input.toLowerCase()=='no' || input.toLowerCase()=='n' || input.toLowerCase()==''){
+    console.log("Thanks For Playing");
+} else{
+    console.log("Invalid Input");
 }
