@@ -250,20 +250,158 @@
 // }
 // console.log(arrayDiff([1,2,2,3,4],[2,3,4]));
 
-function firstNonRepeatingLetter(s) {
-  s=s.toLowerCase();
-  let arr=s.split('')
-  let arr1=[];
-  for (let i=0; i<=arr.length-1;i++){
-    arr1.push(arr[i])
-    for (let j=i+1;j<arr.length;j++){
-      if (arr1.includes(arr[j])){
-        continue;
+// function firstNonRepeatingLetter(s) {
+//   s=s.toLowerCase();
+//   let arr=s.split('')
+//   let arr1=[];
+//   for (let i=0; i<=arr.length-1;i++){
+//     arr1.push(arr[i])
+//     for (let j=i+1;j<arr.length;j++){
+//       if (arr1.includes(arr[j])){
+//         continue;
+//       }
+//       else {
+//         return arr[j];
+//       }
+//     }
+//   }
+// }
+// console.log(firstNonRepeatingLetter("aabbcdeeff"));
+
+// function firstNonRepeatingLetter(s) {
+//   arr2=[];
+//   let count0=0;
+//   let count1=0;
+//   let count2=0;
+//   let count3=0;
+//   let count4=0;
+//   let count5=0;
+//   let count6=0;
+//   let count7=0;
+//   let count8=0;
+//   let count9=0;
+//   let count10=0;
+//   let arr1=s.spilt('');
+//   for (let letter of arr1){
+//     for(let index in arr1){
+//     if(letter==arr1[index]){
+//       count[index]++;
+//     }
+//     }
+//   }
+//   let min= Math.min(count0,count1,count2,count3,count4,count5,count6,count7,count8,count9,count10);
+//   for(let index in count){
+//     if(count[index]==min){
+//       return arr1[index];
+//     }
+//   }
+
+// }
+
+
+// function firstNonRepeatingLetter(s) {
+//   s=s.toLowerCase();
+//   let arr1=s.split('');
+//   let arr2=[];
+//   let count0=0;
+//   let count1=0;
+//   let count2=0;
+//   let count3=0;
+//   let count4=0;
+//   let count5=0;
+//   let count6=0;
+//   let count7=0;
+//   let count8=0;
+//   let count9=0;
+//   let count10=0;
+//   for (let letter of arr1){
+//     for(let index in arr1){
+//     if(letter==arr1[index]){
+//       arr2.push(letter)
+//     }
+//     }
+//   }
+//  let min= Math.min(arr2)
+//   for(let indexs in arr2){
+//     if(arr2[indexs]==min){
+//       return arr2[indexs];
+//     }
+//   }
+
+
+// function firstNonRepeatingLetter(s) {
+//   let arr=s.split('')
+//   let arr1=[];
+//   let arr2=[];
+//   for (let i=0; i<=arr.length-1;i++){
+//     let arr2=arr1.push(arr[i])
+//     for (let j=i+1;j<=arr.length;j++){
+//       if (!arr1.includes(arr[j])){
+//         arr1.pop();
+//       }
+//     }
+//   }
+//   return arr2[0];
+// }
+
+// function firstNonRepeatingLetter(s) {
+//   let arr=s.split('');
+//   // let arr1=[];
+//   for (let letter of s){
+//     let fu=s.replace(new RegExp(letter, 'gi'), '2')
+//   let count=0;
+//     for (let i=0;i<arr.length;i++){
+//       if (fu[i]=='2'){
+//         count++;
+//       }
+//     }
+//     if (count!==1){
+//       count=0
+//     }
+//     else {
+//       return letter;
+//     }
+//   }
+//   return '';
+// }
+
+// console.log(firstNonRepeatingLetter("aabbcdeeff"));
+
+function minimalOperations(words) {
+  let just =[];
+  for (let word of words){
+      let count=0;
+      let arr=word.split('')
+      for (let i=0;i<arr.length;i++){
+          if (arr[i]==arr[i+1]){
+              count++;
+              i++;
+          }
       }
-      else {
-        return arr[j];
+      if (count>=1){
+          just.push(count)
       }
-    }
+      else{
+          just.push(count)
+      }
   }
+  return just;
 }
-console.log(firstNonRepeatingLetter("aabbcdeeff"));
+
+
+console.log(minimalOperations(['add','boook','break']))
+
+
+function manipulateStudentRecord(obj, operation, prop, newValue) {
+  const newObj={...obj}
+  let lower=operation.toLowerCase();
+  if(lower=="delete"){
+      delete newObj[prop]
+  }
+  else if (lower=="edit"){
+      if(newObj[prop]!==undefined){
+          newObj[prop]=newValue
+      }
+  }
+  return newObj;
+}
