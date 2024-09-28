@@ -28,5 +28,3 @@ let newSubstring=substring.concat("Ramoliya");
 console.log(newSubstring);
 let split=newSubstring.split('a');
 console.log(split);
-
-// Setter 
