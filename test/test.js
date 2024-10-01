@@ -367,41 +367,71 @@
 
 // console.log(firstNonRepeatingLetter("aabbcdeeff"));
 
-function minimalOperations(words) {
-  let just =[];
-  for (let word of words){
-      let count=0;
-      let arr=word.split('')
-      for (let i=0;i<arr.length;i++){
-          if (arr[i]==arr[i+1]){
-              count++;
-              i++;
-          }
-      }
-      if (count>=1){
-          just.push(count)
-      }
+// function minimalOperations(words) {
+//   let just =[];
+//   for (let word of words){
+//       let count=0;
+//       let arr=word.split('')
+//       for (let i=0;i<arr.length;i++){
+//           if (arr[i]==arr[i+1]){
+//               count++;
+//               i++;
+//           }
+//       }
+//       if (count>=1){
+//           just.push(count)
+//       }
+//       else{
+//           just.push(count)
+//       }
+//   }
+//   return just;
+// }
+
+
+// console.log(minimalOperations(['add','boook','break']))
+
+
+// function manipulateStudentRecord(obj, operation, prop, newValue) {
+//   const newObj={...obj}
+//   let lower=operation.toLowerCase();
+//   if(lower=="delete"){
+//       delete newObj[prop]
+//   }
+//   else if (lower=="edit"){
+//       if(newObj[prop]!==undefined){
+//           newObj[prop]=newValue
+//       }
+//   }
+//   return newObj;
+// }
+
+// (function (){
+//     var a=0;
+//     var secretKey="Naughty Hora"
+//     return secretKey,a;
+// })
+// ();
+// console.log(lol())
+// console.log(secretKey,a);
+
+function count(string) {
+    let strArr=string.split('')
+    let arr=[];
+    for (let i in strArr){
+    let count=0;
+    let obj={}; 
+    if (!arr.includes(strArr[i])){
+      arr.push(strArr[i])
+    }
       else{
-          just.push(count)
+        count++;
       }
-  }
-  return just;
-}
-
-
-console.log(minimalOperations(['add','boook','break']))
-
-
-function manipulateStudentRecord(obj, operation, prop, newValue) {
-  const newObj={...obj}
-  let lower=operation.toLowerCase();
-  if(lower=="delete"){
-      delete newObj[prop]
-  }
-  else if (lower=="edit"){
-      if(newObj[prop]!==undefined){
-          newObj[prop]=newValue
+      if (count!=0){
+        obj.push(strArr[i],count)
       }
+    }
+    return obj;
   }
-  return newObj;
-}
+
+  console.log(count('aba'))
