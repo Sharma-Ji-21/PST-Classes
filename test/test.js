@@ -415,23 +415,229 @@
 // console.log(lol())
 // console.log(secretKey,a);
 
-function count(string) {
-    let strArr=string.split('')
-    let arr=[];
-    for (let i in strArr){
-    let count=0;
-    let obj={}; 
-    if (!arr.includes(strArr[i])){
-      arr.push(strArr[i])
-    }
-      else{
-        count++;
-      }
-      if (count!=0){
-        obj.push(strArr[i],count)
-      }
-    }
-    return obj;
-  }
+// function count(string) {
+//     let strArr=string.split('')
+//     let arr=[];
+//     for (let i in strArr){
+//     let count=0;
+//     let obj={}; 
+//     if (!arr.includes(strArr[i])){
+//       arr.push(strArr[i])
+//     }
+//       else{
+//         count++;
+//       }
+//       if (count!=0){
+//         obj.push(strArr[i],count)
+//       }
+//     }
+//     return obj;
+//   }
 
-  console.log(count('aba'))
+//   console.log(count('aba'))
+
+// snail = function(array) {
+//   let snailArr=[];
+//   for (let arr in array){
+//     let length=array[arr].length;
+//     for(let i=0; i<length-1; i++){
+//         if (!snailArr.includes(array[0][i])){
+//           snailArr.push(array[0][i])
+//         }
+//     }
+//     if (!snailArr.includes(array[arr[length-1]])){
+//       snailArr.push(array[arr][length-1])
+//     }
+//   for(let i=length-1; i>=0; i--){
+//     if(arr==length-1){
+//       if (!snailArr.includes(array[arr][i])){
+//         snailArr.push(array[arr][i])
+//       }
+//     }
+//   }
+// }
+// for(let i=array[0].length-1;i>=0; i--){
+//   if (!snailArr.includes(array[i][0])){
+//     snailArr.push(array[i][0]);
+//   }
+// }
+// return snailArr;
+// }
+// if (!(snailArr.split('')).includes(snail.split(''))){
+//   snail();
+// }
+// snail = function(array) {
+//   let snailArr = [];
+
+//   while (array.length > 0) {
+//     snailArr = snailArr.concat(array.shift()); //T r
+
+//     for (let i = 0; i < array.length; i++) {
+//       if (array[i].length > 0) {
+//         snailArr.push(array[i].pop()); //R cl
+//       }
+//     }
+
+//     if (array.length > 0) {
+//       let lastRow = array.pop();
+//       for (let i = lastRow.length - 1; i >= 0; i--) {
+//         snailArr.push(lastRow[i]); //B r
+//       }
+//     }
+    
+//     for (let i = array.length - 1; i >= 0; i--) {
+//       if (array[i].length > 0) { //L cl
+//         snailArr.push(array[i].shift());
+//       }
+//     }
+//   }
+
+//   return snailArr;
+// }
+
+// console.log(snail([
+//   [1, 2, 3, 4],
+//   [5, 6, 7, 8],
+//   [9, 10, 11, 12],
+//   [13, 14, 15, 16]
+// ]));
+
+
+// function sumOfSquares(n) {
+//   let i=n;
+//   let sum=0;
+//   let arr=[];
+//   while(i>0){
+//     let sq=i*i;
+//         if(sum+sq<=n){
+//           arr.push(sq)
+//           sum+=sq;
+//       }
+//     i--;
+//   }
+//   while (sum<n){
+//     arr.push(1)
+//     sum+=1;
+//   }
+//   return arr;
+// }
+
+// console.log(sumOfSquares(18));
+
+
+
+// function validPass(password) {
+//   const num = '0123456789';
+//   const CHAR= 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+//   const char = 'abcdefghijklmnopqrstuvwxyz';
+  
+//   if (password.length < 3 || password.length >= 20) {
+//     return 'INVALID';
+//   }
+
+//   let Number = false;
+//   let lowerCase = false;
+//   let upperCase = false;
+
+//   for (let i = 0; i < password.length; i++) {
+//     if (num.includes(password[i])) {
+//       Number = true;
+//     }
+//     if (char.includes(password[i])) {
+//       lowerCase = true;
+//     }
+//     if (CHAR.includes(password[i])) {
+//       upperCase = true;
+//     }
+//     if (!num.includes(password[i]) && !char.includes(password[i]) && !CHAR.includes(password[i])) {
+//       return 'INVALID';
+//     }
+//   }
+
+//   if (Number && lowerCase && upperCase) {
+//     return 'VALID';
+//   } else {
+//     return 'INVALID';
+//   }
+// }
+// console.log(validPass('Username123'))
+
+// snail=function(array){
+//   let snailArr=[];
+//   while(array.length>0){
+//     snailArr=snailArr.concat(array.shift()) // t r
+//     for (let i=0; i<array.length;i++){
+//       if (array[i].length>0){
+//         snailArr.push(array[i].pop())  //r cl
+//       }
+//     }
+//     if (array.length>0){
+//       let lastRow=array.pop()
+//       for(let i=lastRow.length-1; i>=0; i--){
+//         snailArr.push(lastRow[i])  //b r
+//       }
+//     }
+//     for(let i=array.length-1;i>=0;i--){
+//       if (array[i].length>0){
+//         snailArr.push(array[i].shift())
+//       }
+//     }
+//   }
+//   return snailArr;
+// }
+
+
+// snail=function(array){
+//   let snailArr=[];
+//   while(array.length>0){
+//     snailArr=snailArr.concat(array.shift())
+
+//       for(let i=0;i<array.length;i++){
+//         if (array[i].length>0){
+//           snailArr.push(array[i].pop())
+//         }
+//       }
+      
+//       if (array.length>0){
+//         let lastRow=array.pop()
+//         for (let i=lastRow.length-1;i>=0;i--){
+//           snailArr.push(lastRow[i])
+//         }
+//       }
+
+//       for(let i=array.length-1;i>=0;i--){
+//         if (array[i].length>0){
+//           snailArr.push(array[i].shift())
+//         }
+//       }
+//     }
+//   return snailArr;
+// }
+//     console.log(snail([[1,2,3],
+//     [4,5,6],
+//     [7,8,9]
+//     ]))
+
+
+function digitwiseAddition(N, K) {
+  let num=String(N)
+  let arr=num.split('')
+  let arr1;
+  while(K>0){
+  //   for (let i=1;i<K;i++){
+  //   if (K==K-i){
+  //     arr=arr1
+  //   }
+  // }
+    for (let i=0;i<arr.length;i++){
+      arr[i] = String(Number(arr[i]) + 1);
+      }
+      K--;
+      // arr1=arr this is wrong 
+      arr1=arr.join('');
+      arr=arr1.split('')
+    }
+  return arr.length;
+}
+
+console.log(digitwiseAddition(9812, 2))
