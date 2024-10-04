@@ -67,3 +67,32 @@ name()
 //         clearInterval(res)
 //     }
 // },5000)
+
+// callback Hell
+
+function getData(dataId, getNext){
+    setTimeout(()=>{
+        console.log(`data ${dataId} fetched`)
+        if (getNext){
+            getNext(dataId+1);
+        }
+    },2000)
+}
+
+getData(1,()=>{
+    getData(2,()=>{
+        getData(3,()=>{
+            getData(4,()=>{
+                getData(5,()=>{
+                    console.log('all data fetched')
+                })
+            })
+        })
+    })
+})
+
+
+let prommised= new Promise((resolve,reject)=>{
+    console.log('I am a Promise')
+    resolve('Success')
+}) //in real life we handel promises we don't create promise as when an API is fetched the api returns a promise only
