@@ -619,25 +619,205 @@
 //     ]))
 
 
-function digitwiseAddition(N, K) {
-  let num=String(N)
-  let arr=num.split('')
-  let arr1;
-  while(K>0){
-  //   for (let i=1;i<K;i++){
-  //   if (K==K-i){
-  //     arr=arr1
-  //   }
-  // }
-    for (let i=0;i<arr.length;i++){
-      arr[i] = String(Number(arr[i]) + 1);
-      }
-      K--;
-      // arr1=arr this is wrong 
-      arr1=arr.join('');
-      arr=arr1.split('')
+// function digitwiseAddition(N, K) {
+//   let num=String(N)
+//   let arr=num.split('')
+//   let arr1;
+//   while(K>0){
+//   //   for (let i=1;i<K;i++){
+//   //   if (K==K-i){
+//   //     arr=arr1
+//   //   }
+//   // }
+//     for (let i=0;i<arr.length;i++){
+//       arr[i] = String(Number(arr[i]) + 1);
+//       }
+//       K--;
+//       // arr1=arr this is wrong 
+//       arr1=arr.join('');
+//       arr=arr1.split('')
+//     }
+//   return arr.length;
+// }
+
+// console.log(digitwiseAddition(9812, 2))
+
+// function sumFibs(n) {
+//   let arr=[];
+//   let sum=0;
+//   for(let i=0;i<=n;i++){
+//     if(i==0){
+//       arr[0]=0;
+//     }
+//     else if(i==1){
+//       arr[1]=1;
+//     }
+//     else {
+//     arr[i]=arr[i-1]+arr[i-2];
+//     }
+//   }
+//   for(let j=0;j<=n;j++){
+//     if(arr[j]%2==0){
+//       sum+=arr[j]
+//     }
+//   }
+//   return arr;
+// };
+
+// console.log(sumFibs(9))
+
+// function Grade(marks){
+//   return marks>=90?"Grade A":marks>=80?"Grade B":marks>=70?"Grade C":marks>=60?"Grade D":"Fail";
+// }
+// let a=Math.random()*100
+// let b=a.toFixed(2)
+// console.log(b)
+// console.log(Grade(b))
+
+
+// let fibanacci=(n)=>{
+//   let arr=[0,1];
+//   for(let i=2;i<n;i++){
+//     arr.push(arr[i-1]+arr[i-2]);
+//   }
+//   return arr;
+// }
+// console.log(fibanacci(10))
+
+// let factorial=(num)=>{
+//   let fact=1;
+//   for(let i=num;i>=1;i--){
+//     fact*=i;
+//   }
+//   return fact;
+// }
+// console.log(factorial(0))
+
+// let prime=(num)=>{
+//   if(num==2){
+//     return true;
+//   }
+//   if(num<2){
+//     return false;
+//   }
+//   for(let i=2;i<num/2;i++){
+//     if (num%i==0){
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+
+// console.log(prime(6))
+
+// let num=(num)=>{
+//     for(let i=num;i>=2;i/=2){
+//       if(i%2!=0){
+//         return false;
+//       }
+//     }
+//     return true;
+//   }
+
+// console.log(num(258))
+
+// let fibanacci=(n)=>{
+//   if (n<2){
+//     return n;
+//   }
+//   return fibanacci(n-1)+fibanacci(n-2)
+// }
+
+// console.log(fibanacci(6))
+
+// let factorial=(num)=>{
+//   if (num===0){
+//     return 1;
+//   }
+//   else{
+//     return num*factorial(num-1)
+//   }
+// }
+
+// console.log(factorial(5))
+
+// let binarySearch=(arr,n)=>{
+//   let low=0;
+//   let high=arr.length-1;
+//   while(low<=high){
+//     let mid=Math.floor((low+high)/2);
+//     if(arr[mid]==n){
+//       return mid;
+//     }
+//     else if(arr[mid]>n){
+//       high=mid-1;
+//     }
+//     else{
+//       low=mid+1;
+//     }
+//   }
+//   return -1;
+// }
+
+// console.log(binarySearch([-5,2,4,6,10],4))
+
+// var countBits = function(n) {
+//   let binaryArr = [];
+//   let str = n.toString();
+//   let arr = str.split('');
+  
+//   for (let num of arr) {
+//       if (num === '1') {
+//           binaryArr.push('0001');
+//       } else if (num === '2') {
+//           binaryArr.push('0010');
+//       } else if (num === '3') {
+//           binaryArr.push('0011');
+//       } else if (num === '4') {
+//           binaryArr.push('0100');
+//       } else if (num === '5') {
+//           binaryArr.push('0101');
+//       } else if (num === '6') {
+//           binaryArr.push('0110');
+//       } else if (num === '7') {
+//           binaryArr.push('0111');
+//       } else if (num === '8') {
+//           binaryArr.push('1000');
+//       } else if (num === '9') {
+//           binaryArr.push('1001');
+//       } else if (num === '0') {
+//           binaryArr.push('0000');
+//       }
+//   }
+
+//   let str1 = binaryArr.join('');
+//   let arr1 = str1.split('');
+//   let count = 0;
+  
+//   for (let man of arr1) {
+//       if (man === '1') {
+//           count++;
+//       }
+//   }
+
+//   return arr1;
+// };
+
+// console.log(countBits(5023));
+
+function oddRow(n) {
+  let arr=[];
+  let sum=0
+  let o=1;
+  for (let i=n;i>0;i--){
+    sum+=i
+    while(arr.length<=sum){
+      arr.push(o);
+      o+=2;
     }
-  return arr.length;
+  }
+  let newArr=arr.slice(sum-n,sum)
+  return newArr;
 }
 
-console.log(digitwiseAddition(9812, 2))
+console.log(oddRow(5))
