@@ -1,0 +1,124 @@
+<!-- 
+ Ordered list=> BASICALLY NUMBERED (SERIAL WISE)
+ Unordered list=> BASICALLY BINDU (BULLET)
+ Description list=> BASICALLY USING OL TAG WITH AN ACTION TYPE=''
+ we can use this Description list in both Ordered and Unordered lists
+
+<a> Link (Anchor Tag)=>  The <a> tag defines a hyperlink, which is used to link from one page to another. The most important attribute of the
+<a> element is the href attribute, which indicates the link’s destination. This attribute determines where the user is
+directed upon clicking the link.
+
+Unvisited links: Underlined and blue.
+Visited links: Underlined and purple.
+Active links: Underlined and red.
+
+Relative Links: (accessing other html files)
+Relative links are used to link pages within the same website. They are based on the
+structure of your website’s directories, making them flexible and portable as the
+website moves between different domains or servers.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BRO</title>
+    </head>
+    <style>
+        body{
+            background-color: rgb(178, 118, 53);
+            color: rgb(57, 49, 32);
+        }
+        </style>
+    <body>
+        <a href="/HTML/Classes/Day-1/index1.html" target="_blank"> <img src="Om.JPEG" width="75px" height="100px"> </a>
+        <br>
+            <!-- We use # and the id to access the particular element in the code itself -->
+        <a href="#Hlo">Skills</a>
+        <br>
+        <a href="#Address">Address</a>
+        <h2>LIST</h2>
+        <p>Ordered List</p>
+        <!-- BASICALLY NUMBERED (SERIAL WISE) -->
+        <ol>
+            <li><a href="https://www.apple.com/in/" target="_blank">Apple</a></li>
+            <!-- here target blank works like, when the link is clicked then it opens the link in the new window -->
+            <li><a href="https://en.wikipedia.org/wiki/Banana">Banana</a></li>
+            <!-- we can also link my other html files -->
+            <li><a href="maam1.html">Cheery</a></li>
+            <!-- if we want to access other html file which is from different directory then we need to use this command -->
+        </ol>
+        <p>Unordered List</p> 
+        <!-- BASICALLY BINDU (BULLET) -->
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Cherry</li>
+        </ul>
+        <p>Description List</p>
+        <!-- BASICALLY IT HAS TERM AND DEFINITION -->
+         <ol type="A">
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Cherry</li>
+            <li>Date</li>
+         </ol>
+         <p>Nested List</p>
+         <ol>
+            <li>Apple
+                <ul type="none">
+                    <li>Apple Red</li>
+                    <li>Apple Green</li>
+                </ul>
+            </li>
+            <li>Banana
+                <ul type="disc">
+                    <li>Banana Red</li>
+                    <li>Banana Green</li>
+                </ul>
+            </li>
+            <li>Cherry
+                <ul type="square">
+                    <li>Cherry Red</li>
+                    <li>Cherry Green</li>
+                </ul>
+            </li>
+         </ol>
+         <p id="Hlo">
+            Skill
+            JavaScript Proficiency:
+            Variables, data types, arrays, objects, functions
+            Operators: arithmetic, logical, comparison (==, ===)
+            Type coercion and bitwise conversion
+            Control structures: understanding of loops (e.g., learning for...of and for...in)
+            Understanding of synchronous and asynchronous JavaScript (callbacks, setTimeout, clearTimeout)
+            Problem-Solving:
+
+            Tackling problems on platforms like Codewars, such as the interpreter problem and snail problem.
+            Working on small projects like a calculator, shopping cart, and money splitter.
+            Git and GitHub:
+
+            You have set up Git and created branches for your projects.
+            Uploaded projects to a private GitHub repository.
+            Web Development:
+
+            HTML, CSS, and JavaScript projects like Money Splitter.
+            Adding styling (including theme preferences) and enhancing UI with elements like emojis.
+            Learning APIs:
+
+            Though you're new to APIs, you're exploring how to fetch and handle data using promises.
+            You have a solid foundation in JavaScript and are learning advanced concepts like promises and asynchronous programming. You're also comfortable with version control using GitHub.
+         </p>
+         <p id="Address">
+            Address
+            <br>
+            PST Polaris School of Technology
+            <br>
+            Bangalore
+            <br>
+            India
+         </p>
+         <p id ="mail">
+            <a href="mailto:Justsharmaji69@gmail.com">Click here to mail me</a>
+        </p>
+    </body>
+</html>
