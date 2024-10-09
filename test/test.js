@@ -805,19 +805,19 @@
 
 // console.log(countBits(5023));
 
-function oddRow(n) {
-  let arr=[];
-  let sum=0
-  let o=1;
-  for (let i=n;i>0;i--){
-    sum+=i
-    while(arr.length<=sum){
-      arr.push(o);
-      o+=2;
-    }
-  }
-  let newArr=arr.slice(sum-n,sum)
-  return newArr;
-}
+// function oddRow(n) {
+//   let arr=[];
+//   let sum=0
+//   let o=1;
+//   for (let i=n;i>0;i--){
+//     sum+=i
+//     while(arr.length<=sum){
+//       arr.push(o);
+//       o+=2;
+//     }
+//   }
+//   let newArr=arr.slice(sum-n,sum)
+//   return newArr;
+// }
 
-console.log(oddRow(5))
+// console.log(oddRow(5))

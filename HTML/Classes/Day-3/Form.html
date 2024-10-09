@@ -1,0 +1,42 @@
+<!-- 
+ names are the identifiers for the same
+ we can use id also but name is more specified so preference goes to name
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form>
+    <input type="text" name="Username" placeholder="Enter Username" required="true">
+    <br><br>
+    <input type="password" name="Password" placeholder="Enter Your Password" required>
+    <br><br>
+    <input type="email" name="email" placeholder="Enter Your Email" required>
+    <br><br>
+    Gender
+    <br>
+    <span>
+        <input type="radio" name="male">
+        <label for="male">Male</label>
+    </span>
+    <span>
+        <input type="radio" name="female">
+        <label for="female">Female</label>
+    </span>
+    <label for="male"></label>
+    <br>
+    <select name="Country" >
+        <option value="in">India</option>
+        <option value="us">USA</option>
+    </select>
+    <br><br>
+    <button type="Submit">Submit</button>
+</form>
+</body>
+</html>
