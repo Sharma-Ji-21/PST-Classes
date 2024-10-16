@@ -13,6 +13,7 @@ public class firstGame {
         else {
             System.out.println("Welcome "+playerName+" to the game!");
         }
+        NameInput.close();
         int randomNum12 = (int)(Math.random()*(100 - 1))+1;
         int count=1;
         while(true){
@@ -29,8 +30,7 @@ public class firstGame {
             System.out.println("Congratulations! You guessed the correct number in "+count+" times.");
             break;
         }
-            count++;
-            
-        }
+        count++;
     }
+}
 }
