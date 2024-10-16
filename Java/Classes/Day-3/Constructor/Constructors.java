@@ -18,5 +18,8 @@ public class Constructors {
         //  here the obj is behaving like refrence not the key value pair.
         Constructors obj = new Constructors();
         System.out.println(obj.x);
+        // if I am not passing the value in x then it will be printing the default value i.e "null".
+        // this tells us that default value for constructor is null.
+        
     }
 }
