@@ -1,4 +1,3 @@
-package Question;
 /*
  * Question 1
  * create a base class Vehical with property make and modelYear.
