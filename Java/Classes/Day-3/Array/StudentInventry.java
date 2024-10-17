@@ -7,6 +7,7 @@ public class StudentInventry {
         System.out.println("Enter number of students: ");
         int n=input.nextInt();
         String name[]=new String[n];
+        // Clearing Input Buffer
         input.nextLine();
         // To take input in the first cycle as the default behavior is that when the loops sarts it doesn't take input for the first time.
         for(int i=0;i<n;i++){
