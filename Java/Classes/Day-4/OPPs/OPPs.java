@@ -25,12 +25,11 @@ Foure fundamental pillar of Opps:
 3. Inheritance
 4. Polymorphism
 */
-package OPPs;
-public class OPPs {
+
     /*
      * inheritance :
     - Single inheritance: Single Parent
     - Multilevel inheritance: Sequence of Multiple Parent
     - Multiple inheritance: Extending Multiple Classes to Child Class.(Not Possible in Java By using Interfaces)
     */
-}
+
