@@ -1,3 +1,5 @@
+package DSA.JAVA.Topic.Sample1;
+import java.util.*;
 public class Sample1 {
     public static void main(String[] args) {
         int nums[]={0,0,1,5,5,7,1,3,3};
