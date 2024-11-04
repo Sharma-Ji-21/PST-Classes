@@ -3,7 +3,7 @@ Space Complexity:
 - Input Complexity:
 - Auxiliary Complexity:
 */
-package DSA.JAVA.Something.SpaceComplexcity;
+package DSA.JAVA.SpaceComplexcityEx.SpaceComplexcity;
 
 public class SpaceComp {
     public static void main(String[] args) {

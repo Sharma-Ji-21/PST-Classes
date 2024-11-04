@@ -1,4 +1,4 @@
-package DSA.JAVA.Something.Examples;
+package DSA.JAVA.SpaceComplexcityEx.Examples;
 public class AddIndivisual {
     static int input(int x){
         // int sum=0;

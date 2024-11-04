@@ -1,5 +1,5 @@
 
-package DSA.JAVA.Something.Examples;
+package DSA.JAVA.SpaceComplexcityEx.Examples;
 public class Power3 {
     public static boolean isPowerOfThree(int num) {
         int num1=1;
