@@ -1,4 +1,3 @@
-import java.util.*;
 abstract class Parent {
     abstract public void language(); // abstract method
     public void message() {

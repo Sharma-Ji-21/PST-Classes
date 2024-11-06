@@ -1,4 +1,4 @@
-package Packages;
+package Package;
 /*  
 1. Packages( Similar as Folder)
 Basically used to organise Code And Class Files

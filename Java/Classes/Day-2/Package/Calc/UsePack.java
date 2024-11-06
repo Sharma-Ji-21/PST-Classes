@@ -1,5 +1,5 @@
-import Packages.Calc.CreatePack;
-import java.util.Scanner;
+import java.util.*;
+import Package.Calc.CreatePack;
 class UsePack {
     public static void main(String[] args) {
         CreatePack obj = new CreatePack();
