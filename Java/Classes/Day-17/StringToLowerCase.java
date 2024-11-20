@@ -3,6 +3,9 @@ public class StringToLowerCase {
         char c1='a';
         char c2='A';
         System.out.println(c1-c2); // 32 : which means small letter case is having 32 more value in numaric than Caps alphabets
+        // int x=98;
+        // System.out.println((char)x); 
+        // here we are using char so that we can use this numaric value as char;
         String s="aBcD";
         String s1="";
         for(int i=0;i<s.length();i++){

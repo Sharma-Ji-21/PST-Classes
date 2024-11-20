@@ -1,0 +1,26 @@
+.Container{
+    align-items: center;
+    align-content: center;
+    border: 3px solid black;
+    text-align: center;
+    width: 30%;
+    margin-top: 17%;
+    margin-left: 35%;
+    box-shadow: 2px 2px 5px;
+    border-radius: 15px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+button{
+    /* display: block; */
+
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
