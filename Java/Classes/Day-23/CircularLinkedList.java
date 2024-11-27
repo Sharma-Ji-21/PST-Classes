@@ -17,8 +17,8 @@ public class CircularLinkedList {
         }
         temp.next=hey;
         for(int i=0;i<10;i++){
-            System.out.println(hey.num);
             hey=hey.next;
+            System.out.println(hey.num);
         }
     }
 }
