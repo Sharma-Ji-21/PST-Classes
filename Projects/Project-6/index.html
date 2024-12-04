@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: black;
+        }
+        #stdform{
+            color: white;
+            text-align: center;
+            font-size: large;
+            width: 40%;
+            padding: 10px;
+            box-shadow: 0 0 30px rgb(246, 246, 246);
+            border-radius: 10px;
+            margin: 0 auto;
+            margin-top: 10%;
+            background-color: rgb(37, 37, 37);
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="stdform">
+        <label for="fname">First Name:</label>
+        <input type="text" name="" id="fname"><br><br>
+        <label for="sname">Second Name:</label>
+        <input type="text" name="" id="sname"><br><br>
+        <label for="email" >Email:</label>
+        <input type="email" name="" id="email"><br><br>
+        <label for="pass">Password:</label>
+        <input type="password" name="" id="pass"><br><br>
+        <input type="submit" placeholder="Submit" onclick="getdata()">
+    </div>
+    <script>
+        let fnmae = document.getElementById("fname");
+        let sname = document.getElementById("sname");
+        let email = document.getElementById("email");
+        let pass = document.getElementById("pass");
+        function getdata(){
+            console.log(fname.value);
+            console.log(sname.value);
+            console.log(email.value);    
+            console.log(pass.value);
+            localStorage.setItem("fname",fname.value);
+            localStorage.setItem("sname",sname.value);
+            localStorage.setItem("email",email.value);
+            localStorage.setItem("pass",pass.value);    
+        }   
+    </script>
+</body>
+</html>
