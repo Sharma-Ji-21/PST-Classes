@@ -24,7 +24,7 @@ public class LinkedListDelete {
         count1.next.next=new Node(12, "sharma");
         count1.next.next.next=new Node(14, "abc");
         count1.next.next.next.next=new Node(7, "xyz");
-         check(count1, 3);
+        check(count1, 3);
         while (count1!=null) {
             System.out.println(count1.age);
             count1=count1.next;

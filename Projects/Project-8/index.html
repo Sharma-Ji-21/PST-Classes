@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="stdform">
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname">
+        <label for="sname">Second Name</label>
+        <input type="text" name="sname" id="sname">
+        <label for="email">Email</label>
+        <input type="email" name="" id="email">
+        <button >Submit</button>
+        <div id="users"></div>
+    </form>
+    <script>
+        // let users=get
+        let form= document.getElementById("stdform");
+        let fname= document.getElementById("fname");
+        let sname= document.getElementById("sname");
+        let email= document.getElementById("email");
+        let users=document.getElementById("users");
+        form.addEventListener('submit',(event)=>{
+            event.preventDefault(); // so that page do not get refresh
+            let fristname=document.createElement('div');
+            let secondname=document.createElement('div');
+            let emaildata=document.createElement('div');
+            fristname.textContent=fname.value;
+            secondname.textContent=sname.value;
+            emaildata.textContent=email.value;
+            users.appendChild(fristname);
+            users.appendChild(secondname);
+            users.appendChild(emaildata);
+            console.log(fname.value);
+            form.reset();
+        })
+    </script>
+</body>
+</html>

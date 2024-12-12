@@ -1,0 +1,21 @@
+{
+  "name": "chatspt-theme",
+  "displayName": "Chatgpt Theme",
+  "description": "A Dark theme inpired by ChatGPT",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Sharmaji-gpt",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Sharmaji-gpt-color-theme.json"
+      }
+    ]
+  }
+}
