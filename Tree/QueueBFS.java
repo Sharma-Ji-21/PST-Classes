@@ -1,4 +1,4 @@
-package Tree;
+
 import java.util.Queue;
 import java.util.LinkedList;
 
@@ -17,7 +17,8 @@ public class QueueBFS { // ← This should match the file name
     }
 
     public static void bfs(Node root) {
-        if (root == null) return;
+        if (root == null)
+            return;
 
         Queue<Node> q = new LinkedList<>();
         q.add(root);
@@ -26,19 +27,21 @@ public class QueueBFS { // ← This should match the file name
             Node temp = q.poll();
             System.out.println(temp.data);
 
-            if (temp.left != null) q.add(temp.left);
-            if (temp.right != null) q.add(temp.right);
+            if (temp.left != null)
+                q.add(temp.left);
+            if (temp.right != null)
+                q.add(temp.right);
         }
     }
-   
+
 }
-//     public static int return_Size(Node root){
-//         if(root==null){
-//             return 0;
-//     }
-//     int left=return_Size(root.left);
-//     int right=return_Size(root.right);
-//     return left+right+1;
+// public static int return_Size(Node root){
+// if(root==null){
+// return 0;
+// }
+// int left=return_Size(root.left);
+// int right=return_Size(root.right);
+// return left+right+1;
 // }
 // }
 
